@@ -16,5 +16,5 @@ Array.prototype.dim = function(dim, init) {
 
 console.time('Dim function')
 const dim = arr.dim(10, 0)
-// console.log(dim);
+console.log(dim); // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 console.timeEnd('Dim function')
