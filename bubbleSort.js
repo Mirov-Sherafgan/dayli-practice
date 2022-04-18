@@ -10,7 +10,7 @@ const array = [
 ];
 
 const sorted = Array(20).fill(null).map(() =>Math.floor(Math.random() * 2000) - 1000)
-console.log(bubbleSort(array))
+// console.log(bubbleSort(array))
 function bubbleSort(array) {
   for (let n = 0; n < array.length; n++) {
     for (let i = 0; i < array.length - 1 - n; i++) {

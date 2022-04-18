@@ -1,0 +1,114 @@
+.main {
+  @apply my-28 px-[5px];
+
+  > section {
+    @apply grid grid-rows-2 md:grid-rows-1 gap-16 md:grid md:grid-cols-2 md:gap-3;
+
+    > article {
+
+      &:nth-child(1) {
+        @apply grid px-6 md:px-0 grid-rows-[minmax(50px,_100px)_minmax(50px,_80px)_minmax(40px,_60px)] gap-6;
+
+        > h2 {
+          @apply text-4xl w-[350px] font-medium;
+
+          > span {
+            @apply font-bold
+          }
+        }
+
+        > h5 {
+          @apply text-lg
+        }
+
+        > button {
+          @apply bg-[#F53838] hover:bg-[#F50110] active:bg-[linear-gradient(183.72deg,_#FF9F81_-12.7%,_#F53838_114.19%)] rounded-xl shadow-[0px_20px_35px_15px_#F5383859] text-white w-[250px]
+        }
+      }
+    }
+  }
+
+  > div {
+
+    &:nth-child(2) {
+      @apply mx-12 grid  grid-rows-3 gap-6  md:justify-between md:grid-cols-3 md:grid-rows-1 md:items-center shadow-[8px_34px_86px_2px_rgba(34,60,80,0.2)] mt-12  py-16 ;
+      > span {
+        @apply grid grid-cols-2 md:grid-cols-2 md:first:row-span-2 md:gap-4 h-full border-r-2 border-l-neutral-400;
+
+        > img {
+          @apply row-start-1 row-end-3 place-self-end mr-4;
+        }
+
+        > h3 {
+          @apply font-bold text-2xl
+        }
+
+        > p {
+          @apply col-start-2
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      @apply mt-24 grid md:grid-rows-1 md:pb-32 grid-rows-2 gap-3 md:gap-0 px-6 md:grid-cols-[minmax(200px,_1fr)_500px];
+
+      > article {
+        @apply grid grid-rows-[auto_auto_auto] gap-6  place-self-end;
+
+        > h2 {
+          @apply font-bold text-4xl
+        }
+
+        > ul {
+          @apply grid grid-cols-[auto,_1fr] gap-2
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      @apply bg-blue-400 left-[0] absolute right-[0] mx-auto;
+      background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+      > div {
+        @apply container px-6 py-12 mx-auto;
+        > h2 {
+          @apply font-bold text-4xl text-center my-6
+        }
+
+        > h3 {
+          @apply text-[#4F5665] text-center md:w-[555px] mx-auto
+        }
+
+        > section {
+          @apply grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center mt-16;
+          > article {
+            @apply w-[300px] rounded-lg hover:border-[#F53838] border-2 border-zinc-200 grid grid-rows-[auto_1fr_auto] border-b-blue-400 h-[700px] p-[50px];
+            > div {
+              &:first-child {
+                > p {
+                  @apply text-center font-bold my-6
+                }
+                > img {
+                  @apply mx-auto
+                }
+              }
+              &:last-child {
+                @apply flex flex-col place-items-center gap-3;
+                > span {
+                  @apply text-xl font-bold
+                }
+                > button {
+                  @apply w-[180px] py-2 rounded-3xl border-2 text-[#F53838] font-bold hover:text-white hover:bg-[#F53838] border-[#F53838]
+                }
+              }
+            }
+            > ul {
+              > span {
+                @apply grid gap-3 grid-rows-[35px] grid-cols-[auto_1fr] gap-1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

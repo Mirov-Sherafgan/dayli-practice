@@ -1,0 +1,44 @@
+.header {
+  @apply flex justify-between md:grid md:grid-cols-[300px_minmax(200px,_600px)_300px] px-2 py-8 gap-4 relative;
+
+  > section {
+
+    &:nth-child(1) {
+      @apply flex gap-[10px] items-center;
+      > img {
+        @apply cursor-pointer;
+      }
+
+      > h1 {
+        @apply font-medium cursor-pointer;
+        > span {
+          @apply font-bold;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      @apply hidden md:flex justify-center items-center gap-4;
+      > p {
+        @apply font-bold hidden md:block;
+      }
+
+      > button {
+        @apply py-1.5 px-11 rounded-3xl border-[1px] border-[#F53855] hover:bg-[#fde2e6] text-[#F53855] font-bold z-30 absolute top-[365px] w-[150px] left-1/2 ml-2 md:ml-0 -translate-x-1/2 md:translate-x-0  md:static;
+      }
+
+    }
+  }
+
+  > ul {
+    @apply hidden md:grid grid-rows-6 md:grid-rows-1 md:grid-cols-5 md:opacity-100 place-items-center md:static absolute md:visible bg-red-100 md:bg-transparent w-full md:w-auto top-[80px] left-[0] right-[0] transition-all ease-in-out duration-1000;
+    > li {
+      @apply text-base text-[#4F5665] cursor-pointer hover:text-[#F53855] p-4;
+    }
+  }
+
+  > span {
+    @apply text-4xl cursor-pointer md:hidden block absolute right-[15px] md:static
+  }
+}
+
